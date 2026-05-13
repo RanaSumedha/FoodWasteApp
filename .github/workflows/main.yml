@@ -1,0 +1,46 @@
+name: FoodWaste CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  build-and-test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # Checkout repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Install Backend Dependencies
+      - name: Install Backend Dependencies
+        run: |
+          cd server
+          npm install
+
+      # Install Frontend Dependencies
+      - name: Install Frontend Dependencies
+        run: |
+          cd client
+          npm install
+
+      # Build Frontend
+      - name: Build Frontend
+        run: |
+          cd client
+          npm run build
+
+      # Validate Docker Compose
+      - name: Validate Docker Compose
+        run: docker compose config
