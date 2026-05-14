@@ -30,12 +30,12 @@ npm -v
 
 ### Step 2 — Extract / Clone the project
 
-**From zip:** Extract to any folder, e.g. `C:\Projects\foodbridge`
+**From zip:** Extract to any folder, e.g. `C:\Projects\FoodWasteApp`
 
 **From GitHub:**
 ```
 git clone https://github.com/RanaSumedha/FoodWasteApp.git
-cd foodbridge
+cd FoodWasteApp
 ```
 
 ### Step 3 — Create environment files
