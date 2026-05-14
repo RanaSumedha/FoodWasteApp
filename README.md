@@ -34,7 +34,7 @@ npm -v
 
 **From GitHub:**
 ```
-git clone https://github.com/bhavyagupta31/foodbridge.git
+git clone https://github.com/RanaSumedha/FoodWasteApp.git
 cd foodbridge
 ```
 
