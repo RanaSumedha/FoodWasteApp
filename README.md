@@ -1,4 +1,4 @@
-# 🍛 FoodBridge — Food Waste to Hunger Solution
+# FoodBridge — Food Waste to Hunger Solution
 
 A full-stack MERN web application connecting restaurants with surplus food to NGOs and volunteers.
 
