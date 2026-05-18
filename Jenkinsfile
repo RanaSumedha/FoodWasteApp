@@ -12,7 +12,7 @@ pipeline {
         stage('Install Backend Dependencies') {
             steps {
                 dir('server') {
-                    sh 'npm install'
+                    bat 'npm install'
                 }
             }
         }
@@ -20,7 +20,7 @@ pipeline {
         stage('Install Frontend Dependencies') {
             steps {
                 dir('client') {
-                    sh 'npm install'
+                    bat 'npm install'
                 }
             }
         }
@@ -28,14 +28,14 @@ pipeline {
         stage('Build Frontend') {
             steps {
                 dir('client') {
-                    sh 'npm run build'
+                    bat 'npm run build'
                 }
             }
         }
 
         stage('Docker Build') {
             steps {
-                sh 'docker compose build'
+                bat 'docker compose build'
             }
         }
 
