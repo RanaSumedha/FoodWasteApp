@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/RanaSumedha/FoodWasteApp.git'
+                git branch: 'main', url: 'https://github.com/RanaSumedha/FoodWasteApp.git'
             }
         }
 
