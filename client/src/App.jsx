@@ -27,7 +27,7 @@ function Navbar() {
           <button className="btn-secondary btn-sm" onClick={logout}>Sign Out</button>
         ) : (
           <>
-            <Link to="/login" className="btn-secondary btn-sm">Sign In</Link>
+            <Link to="/login" className="btn-secondary btn-sm">Log In</Link>
             <Link to="/register" className="btn-primary btn-sm">Register</Link>
           </>
         )}
