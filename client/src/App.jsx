@@ -24,7 +24,7 @@ function Navbar() {
       <div className="nav-right">
         {user && <NotificationBell />}
         {user ? (
-          <button className="btn-secondary btn-sm" onClick={logout}>Sign Out</button>
+          <button className="btn-secondary btn-sm" onClick={logout}>Log Out</button>
         ) : (
           <>
             <Link to="/login" className="btn-secondary btn-sm">Log In</Link>
